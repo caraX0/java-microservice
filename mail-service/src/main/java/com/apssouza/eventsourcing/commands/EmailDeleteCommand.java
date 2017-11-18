@@ -1,5 +1,7 @@
 package com.apssouza.eventsourcing.commands;
 
+import java.util.UUID;
+
 /**
  * Email delete command
  *
@@ -7,13 +9,13 @@ package com.apssouza.eventsourcing.commands;
  */
 public class EmailDeleteCommand {
 
-    private String uuid;
+    private UUID uuid;
 
-    public EmailDeleteCommand(String id) {
+    public EmailDeleteCommand(UUID id) {
         this.uuid = id;
     }
 
-    public String getUuid() {
+    public UUID getUuid() {
         return uuid;
     }
 

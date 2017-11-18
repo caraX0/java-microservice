@@ -1,6 +1,7 @@
 package com.apssouza.eventsourcing.commands;
 
 import java.time.Instant;
+import java.util.UUID;
 
 /**
  * Email delivery command
@@ -9,15 +10,15 @@ import java.time.Instant;
  */
 public class EmailDeliveryCommand {
 
-    private final String uuid;
+    private final UUID uuid;
     private final Instant instant;
 
-    public EmailDeliveryCommand(String uuid, Instant instant) {
+    public EmailDeliveryCommand(UUID uuid, Instant instant) {
         this.uuid = uuid;
         this.instant = instant;
     }
 
-    public String getUuid() {
+    public UUID getUuid() {
         return uuid;
     }
 
